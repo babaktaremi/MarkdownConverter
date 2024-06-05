@@ -6,6 +6,10 @@
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
+    <PropertyGroup>
+        <BaseAddress>https://babaktaremi.github.io/MarkdownConverter/</BaseAddress>
+    </PropertyGroup>
+
     <ItemGroup>
         <PackageReference Include="Markdig" Version="0.37.0" />
         <PackageReference Include="MarkdigExtensions.SyntaxHighlighting" Version="1.0.3" />
