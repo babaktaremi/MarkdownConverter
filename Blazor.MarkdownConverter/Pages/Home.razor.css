@@ -1,0 +1,22 @@
+﻿
+.centered-container {
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+.custom-textarea {
+    width: 50%;
+    max-width: 600px;
+    height: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #ced4da;
+    font-size: 16px;
+    resize: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.paragraph {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #495057;
+}

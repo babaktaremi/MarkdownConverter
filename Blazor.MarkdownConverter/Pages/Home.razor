@@ -1,0 +1,33 @@
+﻿@page "/"
+@using Blazor.MarkdownConverter.Services
+
+<PageTitle>Markdown To HTML Converter!</PageTitle>
+
+    <div class="row flex centered-container">
+        <div class="centered-container">
+            <textarea class="custom-textarea" placeholder="Write your markdown here..." @oninput="MarkDownValueReceived"></textarea>
+
+        </div>
+    </div>
+
+
+    @(new MarkupString(_convertedString))
+    
+
+@code
+{
+    private string _convertedString = "This will be the converted value here";
+
+    [Inject] private MarkDownService MarkDownService { get; set; }
+    [Inject] private IJSRuntime JsRuntime { get; set; }
+
+    private async Task MarkDownValueReceived(ChangeEventArgs inputValue)
+    {
+        var stringValue = inputValue?.Value?.ToString() ?? string.Empty;
+
+        if (string.IsNullOrWhiteSpace(stringValue))
+            return;
+
+        _convertedString = this.MarkDownService.ConvertToHtml(stringValue);
+    }
+}
