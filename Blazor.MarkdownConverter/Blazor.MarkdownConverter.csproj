@@ -5,20 +5,13 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
-
-    <PropertyGroup>
-        <BaseAddress>https://babaktaremi.github.io/MarkdownConverter/</BaseAddress>
-    </PropertyGroup>
+    
 
     <ItemGroup>
         <PackageReference Include="Markdig" Version="0.37.0" />
         <PackageReference Include="MarkdigExtensions.SyntaxHighlighting" Version="1.0.3" />
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.4"/>
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.4" PrivateAssets="all"/>
-    </ItemGroup>
-
-    <ItemGroup>
-      <_ContentIncludedByDefault Remove="wwwroot\sample-data\weather.json" />
     </ItemGroup>
 
     <ItemGroup>
