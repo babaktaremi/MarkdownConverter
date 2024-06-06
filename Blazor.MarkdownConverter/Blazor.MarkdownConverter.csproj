@@ -4,6 +4,7 @@
         <TargetFramework>net8.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <BlazorEnableCompression>false</BlazorEnableCompression>
     </PropertyGroup>
     
 
@@ -15,7 +16,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="wwwroot\Js\" />
+      <Content Update="wwwroot\.nojekyll">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
 
 </Project>
